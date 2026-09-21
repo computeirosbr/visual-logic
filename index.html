@@ -1,0 +1,316 @@
+<html lang="pt-BR"><head>
+    <meta name="surface-hint" content="desktop-responsive">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- SEO & Meta Tags -->
+    <title>Visual Logic - Simulador de Programação por Blocos</title>
+    <meta name="description" content="Aprenda e pratique lógica de programação com o Visual Logic, um simulador interativo de programação por blocos direto no seu navegador. Crie rotinas, loops e variáveis de forma visual.">
+    <meta name="keywords" content="programação, blocos, lógica de programação, educação, scratch, visual logic, aprender a programar">
+    <meta name="author" content="Visual Logic">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Visual Logic - Aprenda Programação por Blocos">
+    <meta property="og:description" content="Simulador prático para aprender lógica de programação de forma visual e interativa. Arraste, solte e crie seus próprios scripts.">
+    <meta property="og:image" content="robot.png">
+    <link rel="icon" type="image/png" href="robot.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Nunito:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.bottom-1{bottom:0.25rem}.left-0{left:0px}.left-1\/2{left:50%}.left-10{left:2.5rem}.right-1{right:0.25rem}.right-4{right:1rem}.top-0{top:0px}.top-1\/2{top:50%}.top-20{top:5rem}.top-4{top:1rem}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-2{margin-left:0.5rem;margin-right:0.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-14{height:3.5rem}.h-20{height:5rem}.h-40{height:10rem}.h-8{height:2rem}.h-\[1px\]{height:1px}.h-\[320px\]{height:320px}.h-full{height:100%}.h-screen{height:100vh}.min-h-\[1500px\]{min-height:1500px}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-8{width:2rem}.w-80{width:20rem}.w-\[1px\]{width:1px}.w-\[450px\]{width:450px}.w-full{width:100%}.min-w-\[1000px\]{min-width:1000px}.flex-1{flex:1 1 0%}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-crosshair{cursor:crosshair}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-7{grid-template-columns:repeat(7, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}.border-dashed{border-style:dashed}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.bg-\[\#1e1e1e\]{--tw-bg-opacity:1;background-color:rgb(30 30 30 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-indigo-700{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.bg-orange-400{--tw-bg-opacity:1;background-color:rgb(251 146 60 / var(--tw-bg-opacity, 1))}.bg-orange-600{--tw-bg-opacity:1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.bg-pink-500{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-400{--tw-bg-opacity:1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-\[url\(\'https\:\/\/www\.transparenttextures\.com\/patterns\/graphy\.png\'\)\]{background-image:url('https://www.transparenttextures.com/patterns/graphy.png')}.object-contain{object-fit:contain}.p-1\.5{padding:0.375rem}.p-10{padding:2.5rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.pb-60{padding-bottom:15rem}.pl-1{padding-left:0.25rem}.pr-1{padding-right:0.25rem}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.opacity-50{opacity:0.5}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-green-600:hover{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.hover\:bg-red-100:hover{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:bg-indigo-50:focus{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-100{opacity:1}</style><link type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&amp;icon_names=link" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;icon_names=open_in_full" rel="stylesheet"><style id="dyn-img-link-styles-di-script">
+      .dyn-img-link-wrapper-di-script {
+        anchor-scope: all;
+        display: contents;
+        position: relative;
+        z-index: 1;
+      }
+      .dyn-img-link-wrapper-di-script img {
+        anchor-name: --photo;
+        display: block;
+        max-width: 100%;
+      }
+      .dyn-img-link-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+        position: absolute;
+        bottom: anchor(bottom);
+        left: anchor(left);
+        margin-left: 10px;
+        margin-bottom: 10px;
+        transition: background-color 0.2s ease-in-out;
+      }
+      .dyn-img-link-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .dyn-img-link-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+      .dyn-img-attribution-button-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+        position: absolute;
+        position-anchor: --photo;
+        top: anchor(top);
+        right: anchor(right);
+        margin-top: 10px;
+        margin-right: 10px;
+        transition: background-color 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dyn-img-attribution-button-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .dyn-img-attribution-button-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+      .dyn-img-inline-attribution-di-script {
+        z-index: 999999;
+        font-size: 12px;
+        padding: 4px;
+        display: none;
+        position: absolute;
+        position-anchor: --photo;
+        bottom: anchor(bottom);
+        right: anchor(right);
+        margin-bottom: 8px;
+        margin-right: 8px;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+        white-space: nowrap;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+      }
+    </style></head>
+<body class="h-screen flex flex-col text-slate-800">
+    <!-- Header -->
+    <header class="h-14 bg-indigo-700 flex items-center justify-between px-6 z-50 shadow-lg">
+        <div class="flex items-center gap-3">
+            <div class="bg-indigo-600 p-1.5 rounded-lg">
+                <span class="material-symbols-rounded text-yellow-400 text-3xl">extension</span>
+            </div>
+            <div>
+                <h1 class="text-white font-bold tracking-wide text-lg leading-tight">Visual Logic</h1>
+                <span class="text-indigo-200 text-xs uppercase font-semibold tracking-wider">Lógica Descomplicada</span>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <input type="file" id="load-file" class="hidden" accept=".json" onchange="loadProject(event)">
+            <button class="bg-indigo-500 hover:bg-indigo-400 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2 transition active:scale-95" onclick="document.getElementById('load-file').click()">
+                <span class="material-symbols-rounded text-lg">folder_open</span> Abrir
+            </button>
+            <a href="https://computeiros.com" target="_blank" class="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2 transition active:scale-95">
+                <span class="material-symbols-rounded text-lg">language</span> Computeiros
+            </a>
+            <button class="bg-emerald-500 hover:bg-emerald-400 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2 transition active:scale-95" onclick="saveProject()">
+                <span class="material-symbols-rounded text-lg">save</span> Salvar
+            </button>
+        </div>
+    </header>
+    <div class="flex-1 flex overflow-hidden relative">
+        <!-- Palette (Left) -->
+        <div class="w-80 bg-white flex flex-col border-r border-slate-200 shadow-xl z-20">
+            <!-- Categories -->
+            <div class="grid grid-cols-7 gap-1 p-2 border-b border-slate-100 bg-slate-50 overflow-x-auto">
+                <button class="cat-btn w-8 h-8 rounded-full bg-yellow-400 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-events')" title="Eventos"><span class="material-symbols-rounded text-sm">flag</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-blue-500 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-motion')" title="Movimento"><span class="material-symbols-rounded text-sm">open_with</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-purple-500 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-looks')" title="Aparência"><span class="material-symbols-rounded text-sm">visibility</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-orange-400 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-control')" title="Controle"><span class="material-symbols-rounded text-sm">call_split</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-green-500 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-oper')" title="Operadores"><span class="material-symbols-rounded text-sm">calculate</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-orange-600 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-vars')" title="Variáveis"><span class="material-symbols-rounded text-sm">data_object</span></button>
+                <button class="cat-btn w-8 h-8 rounded-full bg-pink-500 mx-auto flex items-center justify-center text-white hover:scale-110 transition shadow" onclick="scrollToCat('cat-funcs')" title="Funções"><span class="material-symbols-rounded text-sm">function</span></button>
+            </div>
+            <!-- Scrollable Blocks -->
+            <div class="flex-1 overflow-y-auto p-4 space-y-8 bg-slate-50" id="palette-scroll">
+                <div id="cat-events">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Eventos</h3>
+                    <div class="block block-hat bg-event shadow-md" data-type="event_start" draggable="true">
+                        <span class="material-symbols-rounded text-xl mr-2">flag</span> quando clicar
+                    </div>
+                </div>
+                <div id="cat-motion">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Movimento</h3>
+                    <div class="block bg-motion" data-type="motion_move" draggable="true">
+                        mova <input class="b-input w-12" type="text" value="10" disabled="true" style="pointer-events: none;"> passos
+                    </div>
+                    <div class="block bg-motion mt-2" data-type="motion_turn_right" draggable="true">
+                        gire <span class="material-symbols-rounded text-sm mx-1">rotate_right</span> <input class="b-input w-12" type="text" value="15" disabled="true" style="pointer-events: none;"> graus
+                    </div>
+                    <div class="block bg-motion mt-2" data-type="motion_goto" draggable="true">
+                        vá para x: <input class="b-input w-12" type="text" value="0" disabled="true" style="pointer-events: none;"> y: <input class="b-input w-12" type="text" value="0" disabled="true" style="pointer-events: none;">
+                    </div>
+                </div>
+                <div id="cat-looks">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Aparência</h3>
+                    <div class="block bg-looks" data-type="looks_say" draggable="true">
+                        diga <input class="b-input w-24" value="Olá!" disabled="true" style="pointer-events: none;"> por <input class="b-input w-10" type="number" value="2" disabled="true" style="pointer-events: none;"> s
+                    </div>
+                    <div class="block bg-looks mt-2" data-type="looks_color" draggable="true">
+                        mude cor <input class="b-input w-16" type="color" value="#3b82f6" disabled="true" style="pointer-events: none;">
+                    </div>
+                </div>
+                <div id="cat-control">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Controle</h3>
+                    <!-- Repeat -->
+                    <div class="block-c-wrap" data-type="control_repeat" draggable="true">
+                        <div class="c-header bg-control">repita <input class="b-input w-12" type="number" value="10" disabled="true" style="pointer-events: none;"> vezes</div>
+                        <div class="c-mouth" style="border-color: var(--col-control);"></div>
+                        <div class="c-footer bg-control simple-footer"></div>
+                    </div>
+                    <!-- IF -->
+                    <div class="block-c-wrap mt-2" data-type="control_if" draggable="true">
+                        <div class="c-header bg-control">se <input class="b-input w-20" placeholder="$pontos &gt; 5" disabled="true" style="pointer-events: none;"> então</div>
+                        <div class="c-mouth" style="border-color: var(--col-control);"></div>
+                        <div class="c-footer bg-control simple-footer"></div>
+                    </div>
+                    <!-- Do While -->
+                    <div class="block-c-wrap mt-2" data-type="control_do_while" draggable="true">
+                        <div class="c-header bg-control">fazer</div>
+                        <div class="c-mouth" style="border-color: var(--col-control);"></div>
+                        <div class="c-footer bg-control">enquanto <input class="b-input w-24 mx-2" placeholder="$i &lt; 5" disabled="true" style="pointer-events: none;"></div>
+                    </div>
+                    <!-- Goto Label -->
+                    <div class="block bg-control mt-2 shadow-inner" data-type="control_label" draggable="true">
+                        <span class="material-symbols-rounded text-sm mr-1">label</span> marcador <input class="b-input w-20" placeholder="inicio" disabled="true" style="pointer-events: none;">
+                    </div>
+                    <!-- Goto Jump -->
+                    <div class="block bg-control mt-2" data-type="control_goto" draggable="true">
+                        <span class="material-symbols-rounded text-sm mr-1">undo</span> ir para <input class="b-input w-20" placeholder="inicio" disabled="true" style="pointer-events: none;">
+                    </div>
+                    <div class="block bg-control mt-2" data-type="control_wait" draggable="true">
+                        espere <input class="b-input w-12" type="text" value="1" disabled="true" style="pointer-events: none;"> seg
+                    </div>
+                </div>
+                <div id="cat-oper">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Operadores</h3>
+                    <div class="p-2 bg-green-50 rounded border border-green-100 text-green-700 text-xs mb-2">
+                        Dica: Digite <code>random(1,10)</code> em qualquer input.
+                    </div>
+                    <!-- Helper Block for Random Assignment -->
+                    <div class="block bg-oper" data-type="var_set_random" draggable="true">
+                        definir <select class="b-input var-select" disabled="true" style="pointer-events: none;"><option value="pontos">pontos</option><option value="i">i</option></select> aleatório <input class="b-input w-8" value="1" disabled="true" style="pointer-events: none;"> a <input class="b-input w-8" value="10" disabled="true" style="pointer-events: none;">
+                    </div>
+                </div>
+                <div id="cat-vars">
+                    <h3 class="text-[10px] font-black text-slate-400 uppercase mb-2 pl-1">Variáveis</h3>
+                    <button class="w-full py-1 mb-2 bg-white border border-slate-200 text-slate-600 rounded text-xs font-bold hover:bg-slate-100" onclick="createVariable()">+ Criar Variável</button>
+                    <div class="block bg-var" data-type="var_set" draggable="true">
+                        mude <select class="b-input var-select" disabled="true" style="pointer-events: none;"><option value="pontos">pontos</option><option value="i">i</option></select> para <input class="b-input w-12" value="0" disabled="true" style="pointer-events: none;">
+                    </div>
+                    <div class="block bg-var mt-2" data-type="var_change" draggable="true">
+                        adicione <input class="b-input w-10" value="1" disabled="true" style="pointer-events: none;"> a <select class="b-input var-select" disabled="true" style="pointer-events: none;"><option value="pontos">pontos</option><option value="i">i</option></select>
+                    </div>
+                </div>
+
+                <!-- Trash -->
+                <div class="mt-8 h-20 border-2 border-dashed border-red-200 bg-red-50 rounded-xl flex items-center justify-center text-red-300 hover:bg-red-100 transition" id="trash-zone">
+                    <span class="material-symbols-rounded text-3xl">delete</span>
+                </div>
+            </div>
+        </div>
+        <!-- Workspace (Center) -->
+        <div class="flex-1 bg-slate-100 relative overflow-auto cursor-crosshair bg-[url('https://www.transparenttextures.com/patterns/graphy.png')]" id="workspace-container">
+            <button class="absolute top-4 right-4 bg-white p-2 rounded shadow hover:text-red-500 z-10" onclick="clearWorkspace()">
+                <span class="material-symbols-rounded">cleaning_services</span>
+            </button>
+            <div class="min-h-[1500px] min-w-[1000px] p-10 pb-60 relative flex flex-col items-start" id="script-zone">
+                <div class="absolute top-20 left-10 p-6 border-2 border-dashed border-slate-300 rounded-2xl flex flex-col items-center gap-2 text-slate-400 select-none pointer-events-none" id="start-hint">
+                    <span class="material-symbols-rounded text-4xl text-green-400">flag</span>
+                    <p class="text-xs font-bold">Arraste a bandeira aqui</p>
+                </div>
+            </div>
+            <div class="drop-indicator" id="drag-indicator"></div>
+        </div>
+        <!-- Stage & Output (Right) -->
+        <div class="w-[450px] bg-white border-l border-slate-200 flex flex-col shadow-2xl z-30">
+            <!-- STAGE (Animation Area) -->
+            <div class="bg-slate-800 p-2 flex justify-between items-center text-white">
+                <span class="text-xs font-bold flex items-center gap-1"><span class="material-symbols-rounded text-sm">monitor</span> Palco</span>
+                <div class="flex gap-1 items-center mr-auto ml-4">
+                    <button class="hover:bg-slate-700 p-1 rounded transition text-slate-300" onclick="changeStageZoom(-0.25)" title="Zoom -">
+                        <span class="material-symbols-rounded text-sm">zoom_out</span>
+                    </button>
+                    <button class="hover:bg-slate-700 p-1 rounded transition text-slate-300" onclick="changeStageZoom(0.25)" title="Zoom +">
+                        <span class="material-symbols-rounded text-sm">zoom_in</span>
+                    </button>
+                    <button class="hover:bg-slate-700 p-1 rounded transition text-slate-300" onclick="resetStageZoom()" title="Resetar Zoom">
+                        <span class="material-symbols-rounded text-sm">search</span>
+                    </button>
+                </div>
+                <div class="flex gap-2">
+                    <button class="bg-green-500 hover:bg-green-600 p-1.5 rounded-full shadow active:scale-95 transition animate-pulse" onclick="runSimulation()" title="Rodar">
+                        <span class="material-symbols-rounded text-xl">play_arrow</span>
+                    </button>
+                    <button class="bg-red-500 hover:bg-red-600 p-1.5 rounded-full shadow active:scale-95 transition" onclick="stopSimulation()">
+                        <span class="material-symbols-rounded text-xl">stop</span>
+                    </button>
+                </div>
+            </div>
+            <div class="relative w-full h-[320px] bg-white overflow-hidden group" id="stage-canvas">
+                <div id="stage-inner" class="absolute inset-0 origin-center transition-transform duration-200">
+                    <div class="absolute w-full h-[1px] bg-slate-200 top-1/2 left-0"></div>
+                    <div class="absolute h-full w-[1px] bg-slate-200 top-0 left-1/2"></div>
+                    
+                    <!-- The Sprite -->
+                    <div class="sprite w-12 h-12 flex items-center justify-center" id="sprite-1" style="top: 160px; left: 225px; transform: translate(-50%, -50%) rotate(0deg) scale(1);">
+                         <img src="robot.png" class="w-full h-full object-contain" alt="Robot">
+                         <div id="sprite-bubble" class="hidden speech-bubble"></div>
+                    </div>
+                </div>
+                
+                <div class="absolute bottom-1 right-1 bg-black/50 text-white text-[10px] px-2 py-0.5 rounded font-mono opacity-50 group-hover:opacity-100 transition">
+                    X: <span id="coord-x">0</span> Y: <span id="coord-y">0</span> | Dir: <span id="coord-dir">90</span>°
+                </div>
+            </div>
+            <!-- Variables Monitor -->
+            <div class="p-3 bg-slate-50 border-y border-slate-200 flex flex-col flex-1">
+                <h3 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex justify-between">
+                    Variáveis (Editáveis)
+                    <button onclick="updateMonitorUI()" class="text-indigo-500 hover:underline">Atualizar</button>
+                </h3>
+                <div class="flex-1 overflow-y-auto space-y-2 pr-1" id="var-monitor"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+    <!-- Global Modal Overlay -->
+    <div id="global-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-200">
+        <div class="bg-white rounded-2xl shadow-2xl w-[400px] overflow-hidden transform scale-95 transition-transform duration-200" id="modal-content">
+            <div class="p-5 border-b border-slate-100 flex items-center gap-3" id="modal-header">
+                <span class="material-symbols-rounded text-indigo-500 text-3xl" id="modal-icon">info</span>
+                <h3 class="text-lg font-bold text-slate-800" id="modal-title">Aviso</h3>
+            </div>
+            <div class="p-5 text-slate-600 text-sm" id="modal-body">
+                Mensagem aqui.
+            </div>
+            <div class="bg-slate-50 p-4 flex justify-end gap-2" id="modal-footer">
+                <button id="modal-btn-cancel" class="px-4 py-2 rounded font-bold text-slate-500 hover:bg-slate-200 hidden transition">Cancelar</button>
+                <button id="modal-btn-ok" class="px-4 py-2 rounded font-bold bg-indigo-500 text-white hover:bg-indigo-600 shadow transition">OK</button>
+            </div>
+        </div>
+    </div>
+</body></html>
